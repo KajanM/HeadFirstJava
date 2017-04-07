@@ -7,9 +7,9 @@ public class SimpleDotCom {
     private int[] locationCells;
     private int noOfHits = 0;
 
-    public String checkYourSelf(String string) {
+    public String checkYourSelf(String guessedString) {
         String result = "miss";
-        int guess = Integer.parseInt(string);
+        int guess = Integer.parseInt(guessedString);
 
 
         for (int i = 0; i < 3; i++) {
