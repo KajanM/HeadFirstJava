@@ -1,6 +1,9 @@
 /**
  * Created by GM_Kajan on 4/7/2017.
  */
+
+/*
+updated to ArrayList
 public class SimpleDotComTestDrive {
     public static void main(String[] args) {
         SimpleDotCom dot = new SimpleDotCom();
@@ -19,3 +22,5 @@ public class SimpleDotComTestDrive {
         System.out.println(testResult);
     }
 }
+)
+*/

@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 /**
  * Created by GM_Kajan on 4/7/2017.
  */
+
 public class SimpleDotComGame {
     public static void main(String[] args) {
         int noOfGuesses = 0;
@@ -10,7 +13,12 @@ public class SimpleDotComGame {
 
         int startIndex = (int)(Math.random()*5);
 
-        int[] locationCells = {startIndex, startIndex + 1, startIndex + 2};
+        ArrayList locationCells = new ArrayList<String>();
+        locationCells.add(Integer.toString(startIndex));
+        locationCells.add(Integer.toString(startIndex + 1));
+        locationCells.add(Integer.toString(startIndex + 2));
+
+
 
         dotcom.setLocationCells(locationCells);
 

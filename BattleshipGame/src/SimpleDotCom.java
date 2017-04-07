@@ -1,35 +1,35 @@
-import org.omg.PortableInterceptor.LOCATION_FORWARD;
 
 /**
  * Created by GM_Kajan on 4/7/2017.
  */
+
+import java.util.ArrayList;
+
 public class SimpleDotCom {
-    private int[] locationCells;
-    private int noOfHits = 0;
+
+    private ArrayList<String> locationCells;
+
 
     public String checkYourSelf(String guessedString) {
         String result = "miss";
-        int guess = Integer.parseInt(guessedString);
 
+        int index = locationCells.indexOf(guessedString);
 
-        for (int i = 0; i < 3; i++) {
-            if (locationCells[i] == guess) {
-                noOfHits ++;
-                locationCells[i] = -1;
-                result = "hit";
-                break;
-            }
+        if (index >= 0) {
+
+            locationCells.remove(index);
+
+            if (locationCells.isEmpty()) {
+                result = "kill";
+            } else result = "hit";
         }
 
-        if(noOfHits == locationCells.length){
-            result = "kill";
-        }
 
         System.out.println(result);
         return result;
     }
 
-    public void setLocationCells(int[] locations) {
+    public void setLocationCells(ArrayList<String> locations) {
         locationCells = locations;
     }
 }
