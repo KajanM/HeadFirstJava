@@ -9,7 +9,7 @@ public class SimpleDotComGame {
         int noOfGuesses = 0;
         GetInput input = new GetInput();
 
-        SimpleDotCom dotcom = new SimpleDotCom();
+        DotCom dotcom = new DotCom();
 
         int startIndex = (int)(Math.random()*5);
 

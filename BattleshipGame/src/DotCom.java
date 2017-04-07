@@ -5,7 +5,7 @@
 
 import java.util.ArrayList;
 
-public class SimpleDotCom {
+public class DotCom {
 
     private ArrayList<String> locationCells;
 
