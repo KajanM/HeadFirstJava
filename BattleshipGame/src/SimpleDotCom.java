@@ -14,14 +14,18 @@ public class SimpleDotCom {
 
         for (int i = 0; i < 3; i++) {
             if (locationCells[i] == guess) {
-                noOfHits += 1;
+                noOfHits ++;
                 locationCells[i] = -1;
                 result = "hit";
-                return result;
-
+                break;
             }
         }
 
+        if(noOfHits == locationCells.length){
+            result = "kill";
+        }
+
+        System.out.println(result);
         return result;
     }
 
