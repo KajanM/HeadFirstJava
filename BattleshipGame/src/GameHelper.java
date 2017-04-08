@@ -3,7 +3,7 @@
  */
 import java.io.*;
 
-public class GetInput {
+public class GameHelper {
     public String getUserInput(String prompt){
         String inputLine = null;
         System.out.println(prompt + " ");
